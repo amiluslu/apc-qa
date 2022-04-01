@@ -13,7 +13,7 @@ Flow to be tested:
   - Use the details fetched to make search for the posts written by the user.
   - For each post, fetch the comments and validate if the emails in the comment section are in the proper format.
 
-This is an example scenario in above and total 19 api scenarios included in project. Tests can run in parallel.
+This is an example scenario in above and total 20 api scenarios included in project. Tests can run in parallel.
 
 ## Using Technologies
 
@@ -33,7 +33,7 @@ If you have Java 11 and Maven this project runs easily in one command.
     - mvn clean install
 - If you want to run with pipeline using CircleCI, click below link;
 
-    - https://app.circleci.com/pipelines/github/amiluslu/apc
+    - https://app.circleci.com/pipelines/github/amiluslu/apc-qa
     - You can check the automation results report and test coverage report in `ARTIFACTS` tab.
 
 ## 🗒️ Additional Informations
@@ -60,7 +60,7 @@ This framework is flexible for any tools. You can get detail informations in bel
 
 ## 🕷️ Bugs & Faults
 
-- There are 8 tests failed out of 19.
+- There are 8 tests failed out of 20.
 
     - 3 of them is related with the `DELETE` endpoint. When you <b>DELETE</b> a record with ID's in  `/users, /posts, /comments` endpoints, system deletes the records, but validations will fail.
     - 3 of them is related with the `CREATE` endpoint. When you <b>POST</b> json object to `/users, /posts, /comments` endpoints, system creates the records, but validations will fail.
